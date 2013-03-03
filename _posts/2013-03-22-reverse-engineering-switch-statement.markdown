@@ -12,7 +12,7 @@ figure out how we can determine the usage of "switch" statement in the assembly
 code. First i will show you the program i wrote for this article. It's a very
 simple switch statement program: 
 
-<code>
+C++:
 
 #include <stdio.h>   
 
@@ -38,7 +38,7 @@ int main () {
 	}   
 	return 0;   
 }   
-</code>
+
 [1]: ../img/switch_compiled_ex1.png
 I compiled the program and then i ran it, using "8" for input. It gave me the
 following output, how it was expected to be: 
