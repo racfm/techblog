@@ -12,33 +12,32 @@ figure out how we can determine the usage of "switch" statement in the assembly
 code. First i will show you the program i wrote for this article. It's a very
 simple switch statement program: 
 
-C++:
-
+{% highlight cpp %}
 #include <stdio.h>   
 
-int main () {   
-	int a=8;   
-	int b=9;   
-	int c=10;   
-	int input;   
-	scanf ("%d",&input);   
-	switch (input) {   
-		case 8:   
-		printf ("a");   
-		break;   
-		case 9:   
-		printf ("b");   
-		break;   
-		case 10:   
-		printf ("c");   
-		break;   
-		default:   
-		printf ("This is techblog");   
-		break;   
-	}   
-	return 0;   
-}   
-
+int main () {
+	int a=8;
+	int b=9;
+	int c=10;
+	int input;
+	scanf ("%d",&input);
+	switch (input) {
+		case 8:
+		printf ("a");
+		break;
+		case 9:
+		printf ("b");
+		break;
+		case 10:
+		printf ("c");
+		break;
+		default:
+		printf ("This is techblog");
+		break;
+	}
+	return 0;
+}
+{% endhighlight %}
 [1]: ../img/switch_compiled_ex1.png
 I compiled the program and then i ran it, using "8" for input. It gave me the
 following output, how it was expected to be: 
